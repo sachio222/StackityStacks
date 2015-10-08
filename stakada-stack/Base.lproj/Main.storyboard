@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stakada_stack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,178 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0iy-C2-0WS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shoeshop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWv-er-20V">
+                                        <rect key="frame" x="208" y="14" width="185" height="21"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.76341429194385502" green="0.90361191123199081" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ZWv-er-20V" firstAttribute="top" secondItem="0iy-C2-0WS" secondAttribute="top" constant="20" id="3dI-KA-cvg"/>
+                                    <constraint firstItem="ZWv-er-20V" firstAttribute="centerX" secondItem="0iy-C2-0WS" secondAttribute="centerX" id="OfY-P4-0Ce"/>
+                                    <constraint firstAttribute="height" constant="50" id="PTB-L8-1H9"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rkB-S4-y1D">
+                                <rect key="frame" x="16" y="66" width="568" height="518"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdS-Wd-LUh">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="298"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chucks" translatesAutoresizingMaskIntoConstraints="NO" id="667-ct-Osy">
+                                                <rect key="frame" x="0.0" y="0.0" width="568" height="298"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="53o-s2-Y9m"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rtg-S0-sXh">
+                                        <rect key="frame" x="18" y="306" width="532" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes1" translatesAutoresizingMaskIntoConstraints="NO" id="BzI-J3-6qn">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="BzI-J3-6qn" secondAttribute="height" multiplier="1:1" id="kIE-8k-IWi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes2" translatesAutoresizingMaskIntoConstraints="NO" id="vrV-TK-tda">
+                                                <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="vrV-TK-tda" secondAttribute="height" multiplier="1:1" id="ORv-S5-KKl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes3" translatesAutoresizingMaskIntoConstraints="NO" id="z6R-AJ-tEh">
+                                                <rect key="frame" x="216" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="z6R-AJ-tEh" secondAttribute="height" multiplier="1:1" id="B7e-sW-eTa"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes4" translatesAutoresizingMaskIntoConstraints="NO" id="Kx8-XY-5YZ">
+                                                <rect key="frame" x="324" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Kx8-XY-5YZ" secondAttribute="height" multiplier="1:1" id="3cI-Oz-otI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes5" translatesAutoresizingMaskIntoConstraints="NO" id="1Uo-Jr-6Az">
+                                                <rect key="frame" x="432" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1Uo-Jr-6Az" secondAttribute="height" multiplier="1:1" id="ezs-Y4-LUo"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="z6R-AJ-tEh" firstAttribute="width" secondItem="BzI-J3-6qn" secondAttribute="width" id="8FH-Sg-Ftc"/>
+                                            <constraint firstItem="1Uo-Jr-6Az" firstAttribute="width" secondItem="BzI-J3-6qn" secondAttribute="width" id="Bl2-13-5dQ"/>
+                                            <constraint firstItem="vrV-TK-tda" firstAttribute="height" secondItem="BzI-J3-6qn" secondAttribute="height" id="CUb-Ee-mGb"/>
+                                            <constraint firstItem="Kx8-XY-5YZ" firstAttribute="height" secondItem="BzI-J3-6qn" secondAttribute="height" id="Grv-Kj-GGB"/>
+                                            <constraint firstItem="Kx8-XY-5YZ" firstAttribute="width" secondItem="BzI-J3-6qn" secondAttribute="width" id="fp8-zq-icX"/>
+                                            <constraint firstItem="z6R-AJ-tEh" firstAttribute="height" secondItem="BzI-J3-6qn" secondAttribute="height" id="kzK-6V-vKh"/>
+                                            <constraint firstItem="vrV-TK-tda" firstAttribute="width" secondItem="BzI-J3-6qn" secondAttribute="width" id="nsW-Rk-2BQ"/>
+                                            <constraint firstItem="1Uo-Jr-6Az" firstAttribute="height" secondItem="BzI-J3-6qn" secondAttribute="height" id="r6p-Sa-Yk9"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="0.0" right="8"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Heb-6Q-YXM">
+                                        <rect key="frame" x="207" y="414" width="155" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chuck Taylor Shoes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqJ-7K-Xxy">
+                                                <rect key="frame" x="0.0" y="0.0" width="155" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="X8F-V4-B81"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.96078431372549022" green="0.19607843137254902" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEE-Ju-9hi">
+                                        <rect key="frame" x="129" y="446" width="311" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ref. 7714112 / USA Special Edition /" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eQ-1F-frA">
+                                                <rect key="frame" x="0.0" y="0.0" width="232" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="a1e-wD-fyj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                <color key="textColor" red="0.39268978444236174" green="0.38859926585442045" blue="0.39678030303030298" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$78.00 USD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogs-eI-5yi">
+                                                <rect key="frame" x="232" y="0.0" width="79" height="20"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                                                <color key="textColor" red="0.33143198131599222" green="0.78199968434343436" blue="0.36452474200980223" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="33" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LSS-nX-XKK">
+                                        <rect key="frame" x="120" y="474" width="328" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr8-D7-9G2">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                                                <color key="backgroundColor" red="0.46865560151057017" green="0.70164952225566668" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="qim-GL-nDZ"/>
+                                                    <constraint firstAttribute="height" constant="44" id="rTK-Av-yVg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Like">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lex-9d-JJG">
+                                                <rect key="frame" x="168" y="0.0" width="160" height="44"/>
+                                                <color key="backgroundColor" red="0.36274480557198652" green="1" blue="0.37125689909443016" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="502-Wb-3Cj"/>
+                                                    <constraint firstAttribute="height" constant="44" id="6PC-qt-AVC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Buy">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Lex-9d-JJG" secondAttribute="trailing" id="6oz-d5-Pjw"/>
+                                            <constraint firstItem="vr8-D7-9G2" firstAttribute="leading" secondItem="LSS-nX-XKK" secondAttribute="leading" id="aeV-CW-IKl"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0iy-C2-0WS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5zN-k2-USf"/>
+                            <constraint firstAttribute="trailing" secondItem="0iy-C2-0WS" secondAttribute="trailing" id="A1h-fh-x6Z"/>
+                            <constraint firstAttribute="trailing" secondItem="rkB-S4-y1D" secondAttribute="trailing" constant="16" id="Ucn-Vp-3Ko"/>
+                            <constraint firstItem="rkB-S4-y1D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="f83-z4-d1G"/>
+                            <constraint firstAttribute="bottom" secondItem="rkB-S4-y1D" secondAttribute="bottom" constant="16" id="kMf-2U-VbV"/>
+                            <constraint firstItem="0iy-C2-0WS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oaX-DC-4Ts"/>
+                            <constraint firstItem="rkB-S4-y1D" firstAttribute="top" secondItem="0iy-C2-0WS" secondAttribute="bottom" constant="16" id="rR8-5d-Yur"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="243" y="339"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chucks" width="640" height="472"/>
+        <image name="shoes1" width="100" height="100"/>
+        <image name="shoes2" width="100" height="100"/>
+        <image name="shoes3" width="100" height="100"/>
+        <image name="shoes4" width="100" height="100"/>
+        <image name="shoes5" width="100" height="100"/>
+    </resources>
 </document>
